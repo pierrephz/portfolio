@@ -366,11 +366,11 @@ nav {
 
 .nav-previous {
   border-top: solid #000;
-  border-bottom: solid #000;
+  border-bottom: solid 1px #000;
 }
 
 .previous-project-name, .next-project-name {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .nav-previous:hover,

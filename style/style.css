@@ -18,6 +18,11 @@
   src: url('../assets/fonts/Friends/Friends-SemiBold.ttf');
 }
 
+@font-face {
+  font-family: 'Friends-very-bold';
+  src: url('../assets/fonts/Friends/Friends-UltraBold.ttf');
+}
+
 body,
 html {
   overscroll-behavior-x: none;
@@ -43,6 +48,20 @@ b {
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+h2 {
+  color: #000;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-family: 'Friends-very-bold';
 }
 
 /* Assets / Margins */
@@ -72,7 +91,7 @@ a {
   color: #000;
   font-size: 1.5rem;
   line-height: 2.3rem;
-  font-weight: 300;
+  font-family: 'Friends';
   text-decoration: none;
 }
 
@@ -388,8 +407,12 @@ nav {
 
   .subcontainer-home .title {
     font-family: 'Friends-title';
-    line-height: 2.5rem;
-    font-size: 1.5rem;
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  .icon-photo-3 {
+    transform: translateY(1rem) rotate(-15deg);
   }
 
 }
@@ -485,7 +508,7 @@ nav {
   color: #1a1a1a;
   background-color: #f4f4f4;
   border-radius: 100px;
-  padding: .5rem .8rem;
+  padding: .5rem 1rem;
 }
 
 .project-cover {
@@ -539,12 +562,12 @@ nav {
   margin-left: 1rem;
 }
 
-.project-name h2 {
-  color: #000;
-}
+@media screen and (max-width: 600px) {
 
-.project-name p {
-  font-weight: 400;
+  .project-name {
+    margin-left: .5rem;
+  }
+
 }
 
 /* More info */
@@ -559,8 +582,7 @@ nav {
 }
 
 .text-more-details p {
-  font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .more-details-email {
@@ -577,10 +599,7 @@ nav {
   }
 
   .tags {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    gap: .5rem .8rem;
+    gap: .8rem;
     margin: 1rem 0;
   }
 
@@ -644,16 +663,13 @@ nav {
 }
 
 .background-name {
-  font-family: 'Friends-bold', 'Open Sans', sans-serif;
+  font-family: 'Friends-very-bold', 'Open Sans', sans-serif;
   color: #000;
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .background-corps {
   color: #000;
-  font-size: 1.3rem;
-  font-weight: 100;
 }
 
 @media screen and (max-width: 1100px) {
@@ -711,14 +727,10 @@ nav {
 
 .title-contact-card {
   font-family: 'Friends-bold', 'Open Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
   color: #000;
 }
 
 .subtitle-contact-card {
-  font-size: 15px;
-  font-weight: 300;
   color: #000;
 }
 
@@ -738,11 +750,14 @@ nav {
   padding: 0.75rem 0;
   text-align: center;
   transition: 0.2s;
-  font-size: 0.75rem;
 }
 
 .credits:hover {
   color: #000;
+}
+
+.credits p {
+  font-size: 1rem;
 }
 
 /* Responsiveness */
@@ -775,11 +790,6 @@ nav {
     width: 80vw;
   }
 
-  .corps {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  }
-
   .hobbies-item p {
     font-size: 1rem;
   }
@@ -787,14 +797,6 @@ nav {
   .project-cover {
     width: 100%;
     height: 20rem;
-  }
-
-  .background-name {
-    font-size: 1.2rem;
-  }
-
-  .background-corps {
-    font-size: 1rem;
   }
 
   .background-visual {
@@ -857,71 +859,9 @@ nav {
 }
 
 @media screen and (max-width: 450px) {
+
   .navbar {
     display: none;
   }
 
-  .project-card {
-    width: 15rem;
-  }
-
-  .project-name {
-    font-size: 0.8rem;
-    line-height: 1.3rem;
-  }
-
-  /* .project_visual_1,
-  .project_visual_2,
-  .project_visual_3,
-  .project_visual_4,
-  .project_visual_5,
-  .project_visual_6,
-  .project_visual_7,
-  .project_visual_8 {
-    width: 250px;
-    height: 200px;
-    border-radius: 5px;
-    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
-    transition: 0.2s;
-  }
-
-  .education_visual {
-    margin-right: 0px;
-    margin-bottom: 15px;
-    height: 60px;
-    width: 60px;
-  }
-
-  .education_name {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .education_corps {
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 100;
-    color: #b1b1b1;
-    line-height: 15px;
-    border: solid red;
-  }
-
-  .contact_icon {
-    height: 35px;
-    width: 35px;
-    border-radius: 5px;
-    background-color: #dedede;
-    margin-right: 20px;
-    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
-  }
-
-  .titre_contact_card {
-    font-size: 15px;
-    transform: translateY(-1px);
-  }
-
-  .corps_contact_card {
-    font-size: 12px;
-    transform: translateY(-1px);
-  } */
 }
