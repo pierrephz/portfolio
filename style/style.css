@@ -505,6 +505,18 @@ nav {
 
 }
 
+@media screen and (max-width: 600px) {
+
+  .link {
+    text-decoration: underline;
+  }
+
+  .link:hover {
+    text-decoration: none;
+  }
+
+}
+
 /* Work */
 
 .work-grid-container {
