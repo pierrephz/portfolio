@@ -412,7 +412,10 @@ nav {
 @media screen and (max-width: 600px) {
 
   .subcontainer-home {
-    transform: translateY(-4rem);
+    top: 2rem;
+    position: absolute;
+    top: 5rem;
+    transform: translateY(0);
   }
 
   .photo-mobile {
