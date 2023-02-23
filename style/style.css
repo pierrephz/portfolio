@@ -24,6 +24,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Friends', 'Open Sans', sans-serif;
+  font-kerning: normal;
   background-color: #fff;
   scroll-behavior: smooth;
   cursor: default;
@@ -150,6 +151,7 @@ nav {
 }
 
 .navlinks-container a {
+  font-family: 'Friends-bold';
   text-decoration: none;
   color: #000;
   transition: color 0.2s;
@@ -386,8 +388,8 @@ nav {
 
   .subcontainer-home .title {
     font-family: 'Friends-title';
-    line-height: 3.5rem;
-    font-size: 3rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
   }
 
 }
