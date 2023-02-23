@@ -415,7 +415,7 @@ nav {
     display: block;
     width: 5rem;
     border-radius: 100px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .drop-me-a-line {
@@ -429,6 +429,14 @@ nav {
     font-family: 'Friends-title';
     line-height: 2.2rem;
     font-size: 1.5rem;
+  }
+
+  .arrow-icon-container {
+    bottom: 2rem;
+  }
+
+  .container-home {
+    height: 90vh;
   }
 
 }
