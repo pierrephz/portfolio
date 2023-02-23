@@ -1,0 +1,197 @@
+.title-project {
+  color: #f4f4f4;
+  font-family: 'Graphik', "Open Sans", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.subtitle-project {
+  color: #f4f4f4;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-project a {
+  color: #f4f4f4;
+  text-decoration: underline;
+}
+
+.container {
+  border-bottom: none;
+}
+
+/* Icon break */
+
+.icon-break {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(assets/img/break-icon/icon-magazine.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(10deg);
+  margin-bottom: 8rem;
+}
+
+/* CTA */
+
+.project-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem 0;
+}
+
+.project-cta a:not(:first-child) {
+  margin-left: 2rem;
+}
+
+/* Footer */
+
+.nav-project {
+  background: #151515;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12rem;
+}
+
+.nav-previous,
+.nav-home,
+.nav-next {
+  text-decoration: none;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  color: #dedede;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.nav-previous:hover,
+.nav-home:hover,
+.nav-next:hover {
+  background-color: #dadada;
+  color: black;
+}
+
+
+
+
+
+
+/* Magazine */
+
+/* images */
+
+.image-container-1 {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.image-container-1 div:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.image-container-2 {
+  width: 80vw;
+  margin: auto;
+}
+
+.image-1, .image-2, .image-3, .image-4, .image-5 {
+  border-radius: 10px;
+  width: 100%;
+  height: 25rem;
+}
+
+.image-container-2 div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.image-1 {
+  background-image: url(assets/img/project/magazine/magazine-view-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-2 {
+  background-image: url(assets/img/project/magazine/magazine-view-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translateY(3rem);
+}
+
+.image-3 {
+  background-image: url(assets/img/project/magazine/magazine-view-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-4 {
+  background-image: url(assets/img/project/magazine/magazine-view-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-5 {
+  background-image: url(assets/img/project/magazine/magazine-view-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1300px) {
+  .imagecontainer {
+    width: 95vw;
+  }
+
+  .image-1, .image-2, .image-3, .image-4, .image-5 {
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .image-container-1, .image-container-2 {
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .image-2 {
+    transform: translateY(0);
+  }
+
+  .image-container-1 div:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .image-1, .image-3, .image-4 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-home {
+    display: none;
+  }
+
+  .title-project {
+    font-size: 3rem;
+  }
+}
