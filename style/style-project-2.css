@@ -3,12 +3,22 @@
   src: url('../assets/fonts/PP-Neue-Machina/PPNeueMachina-InktrapUltrabold.ttf');
 }
 
+@font-face {
+  font-family: 'Friends';
+  src: url('../assets/fonts/Friends/Friends-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Friends-bold';
+  src: url('../assets/fonts/Friends/Friends-SemiBold.ttf');
+}
+
 body,
 html {
   overscroll-behavior-x: none;
   margin: 0;
   padding: 0;
-  font-family: 'Friends', 'Graphik', "Open Sans", sans-serif;
+  font-family: 'Friends', 'Open Sans', sans-serif;
   cursor: default;
 }
 
@@ -32,6 +42,10 @@ h2 {
   font-size: 2rem;
   line-height: 2.8rem;
   font-weight: 700;
+}
+
+b {
+  font-family: 'Friends-bold';
 }
 
 p {
@@ -409,7 +423,7 @@ nav {
 }
 
 .more-details-email {
-  border: solid #dedede;
+  border: solid 1px #dedede;
   padding: .3rem .5rem;
   border-radius: 10px;
 }

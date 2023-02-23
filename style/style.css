@@ -3,12 +3,27 @@
   src: url('../assets/fonts/PP-Neue-Machina/PPNeueMachina-InktrapUltrabold.ttf');
 }
 
+@font-face {
+  font-family: 'Friends-title';
+  src: url('../assets/fonts/Friends/Friends-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Friends';
+  src: url('../assets/fonts/Friends/Friends-Normal.ttf');
+}
+
+@font-face {
+  font-family: 'Friends-bold';
+  src: url('../assets/fonts/Friends/Friends-SemiBold.ttf');
+}
+
 body,
 html {
   overscroll-behavior-x: none;
   margin: 0;
   padding: 0;
-  font-family: 'Friends', 'Graphik', 'Open Sans', sans-serif;
+  font-family: 'Friends', 'Open Sans', sans-serif;
   background-color: #fff;
   scroll-behavior: smooth;
   cursor: default;
@@ -22,7 +37,7 @@ html {
 }
 
 b {
-  font-weight: 700;
+  font-family: 'Friends-bold';
 }
 
 a {
@@ -64,8 +79,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: solid 1px #000;
-  /* border-bottom: solid 1px #070707; */
+  border-bottom: solid 1px #000000;
 }
 
 .subcontainer {
@@ -188,7 +202,6 @@ nav {
     width: 100%;
     height: 2px;
     background: #000;
-    /* background: #f4f4f4; */
     position: absolute;
     pointer-events: none;
     transition: opacity .3s .15s ease-out;
@@ -196,7 +209,6 @@ nav {
 
   .hamburger span:hover {
     background: #0004ff;
-    /* background: #a1a1a1; */
     transition: .2s ease-in-out;
   }
 
@@ -333,7 +345,7 @@ nav {
   align-content: center;
   position: absolute;
   bottom: 3rem;
-  border: solid black;
+  border: solid 2px black;
   padding: 1rem .8rem 1rem .8rem;
   border-radius: 100px;
 }
@@ -373,7 +385,7 @@ nav {
 @media screen and (max-width: 600px) {
 
   .subcontainer-home .title {
-    font-family: "friends";
+    font-family: 'Friends-title';
     line-height: 3.5rem;
     font-size: 3rem;
   }
@@ -387,8 +399,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: solid #000;
-  border-bottom: solid #000;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
 }
 
 .icon-about-me {
@@ -396,7 +408,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(0);
-  border: solid #c8c8c8;
+  border: solid 1px #c8c8c8;
 }
 
 .link-container {
@@ -424,7 +436,7 @@ nav {
 }
 
 .hobbies-item p {
-  border: solid #dedede;
+  border: solid 1px #dedede;
   font-size: 1.2rem;
   background-color: #fff;
   padding: .4rem 1rem;
@@ -456,7 +468,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(0);
-  border: solid #c8c8c8;
+  border: solid 1px #c8c8c8;
 }
 
 .tags {
@@ -550,7 +562,7 @@ nav {
 }
 
 .more-details-email {
-  border: solid #dedede;
+  border: solid 1px #dedede;
   padding: .3rem .4rem;
   border-radius: 10px;
 }
@@ -576,146 +588,6 @@ nav {
 
 }
 
-/*
-
-.container-projects {
-  margin-top: 5rem;
-}
-
-.scroll-cards-container {
-  padding-left: 5vw;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.project-card {
-  width: 25rem;
-  margin: 0 1rem 0 1rem;
-  display: inline-block;
-}
-
-.container-work {
-}
-
-.project-card-pac-man,
-.project-card-paris-fantastic,
-.project-card-porcelain,
-.project-card-ttc,
-.project-card-photos {
-  display: flex;
-  align-items: center;
-}
-
-.work-cards-container {
-}
-
-.project-card-pac-man {
-  justify-content: left;
-  padding-left: 10vw;
-  transform: rotate(-1deg);
-  margin-bottom: 15vh;
-}
-
-.project-card-paris-fantastic {
-  justify-content: right;
-  padding-right: 5vw;
-  transform: rotate(1deg);
-  margin-bottom: 15vh;
-}
-
-.project-card-porcelain {
-  justify-content: left;
-  padding-left: 15vw;
-  transform: rotate(-1.5deg);
-  margin-bottom: 15vh;
-}
-
-.project-card-ttc {
-  justify-content: right;
-  padding-right: 15vw;
-  transform: rotate(1deg);
-  margin-bottom: 15vh;
-}
-
-.project-card-photos {
-  justify-content: left;
-  padding-left: 10vw;
-  transform: rotate(-1deg);
-  margin-bottom: 15vh;
-}
-
-*/
-
-/*
-
-.work-cards-container {
-  padding-bottom: 3rem;
-}
-
-.project-cover {
-  width: 100%;
-  height: 20rem;
-  border-radius: 15px;
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
-  transition: 0.2s;
-}
-
-.cover-pac-man {
-  background-image: url(assets/img/project/pac-man/cover-pac-man.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-paris-fantastic {
-  background-image: url(assets/img/project/magazine/cover-paris-fantastic.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-porcelain {
-  background-image: url(assets/img/project/porcelain/cover-porcelain.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-ttc {
-  background-image: url(assets/img/project/ttc/cover-ttc.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-photos {
-  background-image: url(assets/img/project/photos/cover-photos.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.project-cover:hover {
-  transform: scale(1.01);
-}
-
-.project-name {
-  width: 100%;
-  color: #dedede;
-  font-family: 'Graphik', 'Open Sans', sans-serif;
-  font-weight: 300;
-  margin: 1rem 0rem 0rem 1rem;
-  line-height: 1.5rem;
-}
-
-.more-details {
-  margin-top: 4rem;
-  color: #6b6b6b;
-  font-weight: 700;
-  text-align: center;
-}
-
-*/
 
 /* Background */
 
@@ -728,7 +600,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(.5rem);
-  border: solid #c8c8c8;
+  border: solid 1px #c8c8c8;
 }
 
 .background-items-container {
@@ -770,7 +642,7 @@ nav {
 }
 
 .background-name {
-  font-family: 'Graphik', 'Open Sans', sans-serif;
+  font-family: 'Friends-bold', 'Open Sans', sans-serif;
   color: #000;
   font-size: 1.5rem;
   font-weight: 700;
@@ -802,7 +674,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(-.5rem);
-  border: solid #c8c8c8;
+  border: solid 1px #c8c8c8;
 }
 
 .container-contact-cards {
@@ -814,7 +686,6 @@ nav {
 
 .contact-card {
   border-radius: 20px;
-  /* grid-area: 2 / 2 / 3 / 3; */
   display: flex;
   flex-flow: raw nowrap;
   place-items: center;
@@ -825,8 +696,6 @@ nav {
 
 .contact-card:hover {
   background-color: #f7f7f7;
-  /* transform: rotate(0.4deg); */
-  /* filter: drop-shadow(0 0px 2px rgb(115, 255, 0)); */
   transform: translateY(-3px);
   color: #fff;
 }
@@ -839,7 +708,7 @@ nav {
 }
 
 .title-contact-card {
-  font-family: 'Graphik', 'Open Sans', sans-serif;
+  font-family: 'Friends-bold', 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #000;
