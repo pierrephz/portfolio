@@ -379,8 +379,7 @@ nav {
   }
 
   .icon-photo {
-    width: 3rem;
-    height: 3rem;
+    display: none;
   }
 
 }
@@ -388,9 +387,10 @@ nav {
 @media screen and (max-width: 1000px) {
 
   .subcontainer-home .title {
-    line-height: 4rem;
-    font-size: 3rem;
+    line-height: 3.5rem;
+    font-size: 2.8rem;
     width: 80vw;
+    transform: translateY(-6rem);
   }
 
   .arrow-icon-container {
@@ -406,7 +406,6 @@ nav {
 @media screen and (max-width: 600px) {
 
   .subcontainer-home .title {
-    font-family: 'Friends-title';
     line-height: 3rem;
     font-size: 2rem;
   }
@@ -442,12 +441,12 @@ nav {
 
 .link {
   color: #0004ff;
-  text-decoration: underline;
   transition: .2s ease-in-out;
 }
 
 .link:hover {
   color: #0003c7;
+  text-decoration: underline;
 }
 
 .hobbies-title {
@@ -500,15 +499,16 @@ nav {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap: .5rem .8rem;
-  margin: .5rem 0;
+  gap: .8rem;
+  margin: 1rem 0;
 }
 
 .tags p {
+  font-size: 1rem;
   color: #1a1a1a;
   background-color: #f4f4f4;
   border-radius: 100px;
-  padding: .5rem 1rem;
+  padding: .2rem 1rem;
 }
 
 .project-cover {
@@ -596,11 +596,6 @@ nav {
   .icon-work {
     width: 3rem;
     height: 3rem;
-  }
-
-  .tags {
-    gap: .8rem;
-    margin: 1rem 0;
   }
 
   .text-more-details {
@@ -757,7 +752,7 @@ nav {
 }
 
 .credits p {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 /* Responsiveness */

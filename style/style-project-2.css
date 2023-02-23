@@ -186,7 +186,6 @@ nav {
 
 .tags p {
   font-size: 1rem;
-  font-weight: 500;
   color: #1a1a1a;
   background-color: #f4f4f4;
   border-radius: 100px;
@@ -359,13 +358,13 @@ nav {
 
 .nav-home,
 .nav-next {
-  border-top: solid #000;
-  border-left: solid #000;
-  border-bottom: solid #000;
+  border-top: solid 1px #000;
+  border-left: solid 1px #000;
+  border-bottom: solid 1px #000;
 }
 
 .nav-previous {
-  border-top: solid #000;
+  border-top: solid 1px #000;
   border-bottom: solid 1px #000;
 }
 
@@ -384,6 +383,10 @@ nav {
 
   .nav-home {
     display: none;
+  }
+
+  .previous-project-name, .next-project-name {
+    font-size: 1rem;
   }
 
 }
