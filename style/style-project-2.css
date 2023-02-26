@@ -127,7 +127,7 @@ nav {
 }
 
 .navlinks-container a:hover {
-  background-color: #f1f1f1;
+  background-color: #eaeaea;
 }
 
 @media (max-width: 750px) {
@@ -304,6 +304,10 @@ nav {
   text-align: center;
 }
 
+.text-more-details a {
+  color: #000;
+}
+
 .text-more-details p {
   font-size: 1rem;
   line-height: 2rem;
@@ -327,9 +331,13 @@ nav {
 }
 
 .more-details-email {
-  border: solid 1px #dedede;
-  padding: .3rem .5rem;
-  border-radius: 10px;
+  border-bottom: solid 1px #cecece;
+  padding-bottom: .1rem;
+  transition: 0.2s;
+}
+
+.more-details-email:hover {
+  border-bottom: solid 1px #7d7d7d;
 }
 
 
@@ -341,6 +349,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 12rem;
+}
+
+.nav-project p {
+  line-height: 2rem;
 }
 
 .nav-previous,
@@ -384,6 +396,10 @@ nav {
 
   .nav-home {
     display: none;
+  }
+
+  .nav-project p {
+    line-height: 1.5rem;
   }
 
   .previous-project-name, .next-project-name {
