@@ -64,6 +64,15 @@ h2 {
   font-family: 'Friends-very-bold';
 }
 
+.error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Assets / Margins */
 
 .title {
