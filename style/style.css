@@ -46,15 +46,10 @@ b {
   font-family: 'Friends-bold';
 }
 
-a {
-  text-decoration: none;
-}
-
 p {
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 300;
-  text-decoration: none;
 }
 
 h2 {
@@ -101,7 +96,6 @@ h2 {
   font-size: 1.5rem;
   line-height: 2.3rem;
   font-family: 'Friends';
-  text-decoration: none;
 }
 
 .container {
@@ -437,6 +431,7 @@ nav {
 
   .drop-me-a-line {
     display: block;
+    width: fit-content;
     margin-top: 2rem;
     color: #0004ff;
     text-decoration: underline;
@@ -479,11 +474,6 @@ nav {
 
 .link {
   color: #0004ff;
-  transition: .2s ease-in-out;
-}
-
-.link:hover {
-  color: #0003c7;
   text-decoration: underline;
 }
 
@@ -524,14 +514,6 @@ nav {
 
 @media screen and (max-width: 600px) {
 
-  .link {
-    text-decoration: underline;
-  }
-
-  .link:hover {
-    text-decoration: none;
-  }
-
   .ask-me p {
     font-size: 1rem;
   }
@@ -571,6 +553,10 @@ nav {
   background-color: #f4f4f4;
   border-radius: 100px;
   padding: .2rem 1rem;
+}
+
+.project-name a {
+  text-decoration: none;
 }
 
 .project-cover {
