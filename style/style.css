@@ -72,10 +72,10 @@ h2 {
 
 .title {
   color: #000;
-  font-family: 'Neue-Machina', "Open Sans", sans-serif;
+  font-family: 'Friends-very-bold', 'Neue-Machina', "Open Sans", sans-serif;
   font-size: 3.5rem;
   line-height: 3.5rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 800px) {
@@ -320,14 +320,14 @@ nav {
 }
 
 .subcontainer-home .title {
-  font-family: 'Neue-Machina';
+  font-family: 'Friends-very-bold','Neue-Machina';
   font-size: 4rem;
   width: 70vw;
   line-height: 6rem;
 }
 
 .name {
-  color: #0004ff;
+  border-bottom: 2px solid #000;
 }
 
 .icon-photo {
@@ -465,7 +465,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(0);
-  border: solid 1px #c8c8c8;
+  border: solid 1px #E5CD00;
 }
 
 .link-container {
@@ -501,6 +501,7 @@ nav {
 
 .ask-me a {
   color: #000;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -536,7 +537,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(0);
-  border: solid 1px #c8c8c8;
+  border: solid 1px #000532;
 }
 
 .tags {
@@ -630,6 +631,7 @@ nav {
 
 .text-more-details a {
   color: #000;
+  text-decoration: none;
 }
 
 .more-details-email {
@@ -671,7 +673,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(.5rem);
-  border: solid 1px #c8c8c8;
+  border: solid 1px #FF88FF;
 }
 
 .background-items-container {
@@ -762,7 +764,7 @@ nav {
   height: 5rem;
   border-radius: 100px;
   transform: translateY(-.5rem);
-  border: solid 1px #c8c8c8;
+  border: solid 1px #FF9F9F;
 }
 
 .container-contact-cards {
