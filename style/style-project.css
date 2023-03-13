@@ -13,6 +13,26 @@
   src: url('../assets/fonts/Friends/Friends-SemiBold.ttf');
 }
 
+@font-face {
+  font-family: 'Friends-title';
+  src: url('../assets/fonts/Friends/Friends-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Friends';
+  src: url('../assets/fonts/Friends/Friends-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Friends-bold';
+  src: url('../assets/fonts/Friends/Friends-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Friends-very-bold';
+  src: url('../assets/fonts/Friends/Friends-UltraBold.ttf');
+}
+
 body,
 html {
   overscroll-behavior-x: none;
@@ -31,7 +51,7 @@ html {
 }
 
 h1 {
-  font-family: 'Neue-Machina', "Open Sans", sans-serif;
+  font-family: 'Friends-very-bold', 'Neue-Machina', "Open Sans", sans-serif;
   font-size: 4.5rem;
   line-height: 4rem;
   font-weight: 700;
@@ -39,10 +59,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'Neue-Machina', 'Open Sans', sans-serif;
+  font-family: 'Friends-very-bold', 'Neue-Machina', 'Open Sans', sans-serif;
   font-size: 2rem;
   line-height: 2.8rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 b {
