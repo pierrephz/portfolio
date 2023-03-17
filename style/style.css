@@ -78,7 +78,6 @@ h2 {
   font-weight: 900;
   position: relative;
   letter-spacing: -.08rem;
-  z-index: 100;
 }
 
 @media screen and (max-width: 800px) {
