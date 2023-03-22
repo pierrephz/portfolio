@@ -280,6 +280,11 @@ nav {
   gap: 4rem;
 }
 
+.note {
+  color: #949494;
+  font-style: italic;
+}
+
 .visual-container {
   width: 50%;
   box-shadow:

@@ -574,8 +574,8 @@ nav {
   transition: .2s ease-in-out;
 }
 
-.cover-ds {
-  background-image: url(../assets/img/project/ds/ds-general-visual.png);
+.cover-design-system {
+  background-image: url(../assets/img/project/design-system/design-system-general-visual.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -588,8 +588,8 @@ nav {
   background-size: cover;
 }
 
-.cover-tts {
-  background-image: url(../assets/img/project/tts/tts-general-visual.png);
+.cover-landing-page {
+  background-image: url(../assets/img/project/landing-page/landing-page-general-visual.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
