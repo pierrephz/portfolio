@@ -123,6 +123,17 @@ h2 {
   border-bottom: 0;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .5s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Button */
 
 .button-container {
@@ -693,11 +704,14 @@ nav {
   padding: 2.5rem;
   transition: 0.2s;
   background-color: #f7f7f7;
+}
+
+.background-card a {
   text-decoration: none;
 }
 
 .background-card:not(:last-child) {
-  margin-bottom: 3vh;
+  margin-bottom: 1rem;
 }
 
 .background-card:hover {
