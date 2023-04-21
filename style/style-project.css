@@ -294,6 +294,8 @@ nav {
 .note {
   color: #949494;
   font-style: italic;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 .visual-container {
