@@ -68,6 +68,12 @@ h2 {
   align-items: center;
 }
 
+.link-error-page-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
 /* Assets / Margins */
 
 .title {
@@ -355,7 +361,6 @@ nav {
 
 .icon-photo-2 {
   transform: translateY(1.3rem) rotate(25deg);
-  background-color: rgb(235, 235, 255);
   transition: .2s;
   width: 5rem;
   height: 5rem;
