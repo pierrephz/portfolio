@@ -35,6 +35,18 @@ html {
   cursor: default;
 }
 
+@media (max-width: 1000px) {
+  /* Désactive le hover sur tous les éléments */
+  *:hover {
+    pointer-events: none;
+  }
+
+  /* Réactive le hover sur les liens */
+  a:hover {
+    pointer-events: auto;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
