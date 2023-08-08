@@ -344,9 +344,10 @@ nav {
 
 .subcontainer-home .title {
   font-family: 'Friends-very-bold','Neue-Machina';
-  font-size: 4rem;
+  text-align: center;
+  font-size: 6rem;
   width: 70vw;
-  line-height: 6rem;
+  line-height: 8rem;
 }
 
 .name {
@@ -354,33 +355,38 @@ nav {
 }
 
 .icon-photo-1 {
-  transform: translateY(0rem) translateX(-24rem);
+  transform: translateY(0rem) translateX(-1rem);
   position: relative;
-  z-index: -100;
-  width: 6rem;
-  height: 6rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 100px;
+  border: solid .5rem white;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .icon-photo-2 {
-  transform: translateY(1.3rem) rotate(25deg);
+  transform: rotate(25deg);
   transition: .2s;
-  width: 5rem;
-  height: 5rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 100px;
+  border: solid .5rem white;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .icon-photo-2:hover {
-  transform: scale(6);
+  transform: scale(4);
 }
 
 .icon-photo-3 {
-  transform: translateY(0rem) translateX(-.5rem) rotate(-15deg);
+  transform: translateY(-.5rem) translateX(-.5rem) rotate(-15deg);
   position: relative;
   z-index: 100;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 100px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 20px;
+  border: solid .5rem white;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .photo {
@@ -406,25 +412,44 @@ nav {
   transform: translateY(-3px);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1550px) {
 
   .subcontainer-home .title {
-    line-height: 5rem;
-    width: 75vw;
+    line-height: 6rem;
+    font-size: 4rem;
+    width: 90vw;
   }
 
   .icon-photo {
-    display: none;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .icon-photo-3 {
+    width: 5rem;
+    height: 5rem;
   }
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+
+  .subcontainer-home .title {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width: 1060px) {
 
   .subcontainer-home .title {
     line-height: 4rem;
     font-size: 3rem;
-    width: 80vw;
+    text-align: left;
+  }
+
+  .icon-photo {
+    display: none;
   }
 
   .arrow-icon-container {
@@ -438,6 +463,10 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+
+  .subcontainer-home .title {
+    width: 80vw;
+  }
 
   .subcontainer-home {
     top: 2rem;
@@ -481,16 +510,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
 }
 
 .icon-about-me {
   width: 5rem;
   height: 5rem;
   border-radius: 100px;
-  transform: translateY(0);
-  border: solid 1px #E5CD00;
+  border: solid .5rem white;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .link-container {
@@ -560,9 +587,10 @@ nav {
 .icon-work {
   width: 5rem;
   height: 5rem;
-  border-radius: 100px;
-  transform: translateY(0);
-  border: solid 1px #7EA2FF;
+  border-radius: 20px;
+  transform: rotate(15deg) translateX(1rem) translateY(-1rem);
+  border: solid .5rem white;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .tags {
@@ -698,15 +726,16 @@ nav {
 /* Background */
 
 .container-background {
-  border-top: solid 1px #070707;
+  background-color: #f8f9ff;
 }
 
 .icon-globe {
   width: 5rem;
   height: 5rem;
   border-radius: 100px;
-  transform: translateY(.5rem);
-  border: solid 1px #FF88FF;
+  transform: translate(0rem, -.5rem);
+  border: solid 7px white;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .background-items-container {
@@ -718,12 +747,9 @@ nav {
   border-radius: 20px;
   background: none;
   padding: 2.5rem;
-  transition: 0.2s;
-  background-color: #f7f7f7;
-}
-
-.background-card a {
   text-decoration: none;
+  transition: 0.2s;
+  background-color: #eef1ff;
 }
 
 .background-card:not(:last-child) {
@@ -732,7 +758,7 @@ nav {
 
 @media (hover: hover) {
   .background-card:hover {
-    background-color: #f1f1f1;
+    background-color: #e6ebff;
   }
 }
 
@@ -800,9 +826,10 @@ nav {
 .icon-peace {
   width: 5rem;
   height: 5rem;
-  border-radius: 100px;
-  transform: translateY(-.5rem);
-  border: solid 1px #FF9F9F;
+  border-radius: 20px;
+  transform: rotate(-15deg) translateY(-1rem);
+  border: solid .5rem white;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .container-contact-cards {
@@ -957,7 +984,7 @@ nav {
   }
 
   .contact-card {
-    border: solid 1px #2c2c2c;
+    border: solid 1px #dddddd;
   }
 
   .background-card {
