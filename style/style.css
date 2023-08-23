@@ -42,6 +42,20 @@ html {
   list-style-type: none;
 }
 
+/* Non-touch devices */
+@media (hover: hover) {
+  a:hover {
+      /* styles for hover state */
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  a:active {
+      /* styles for active state */
+  }
+}
+
 b {
   font-family: 'Friends-bold';
 }

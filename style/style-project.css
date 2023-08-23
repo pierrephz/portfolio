@@ -50,6 +50,20 @@ html {
   list-style-type: none;
 }
 
+/* Non-touch devices */
+@media (hover: hover) {
+  a:hover {
+      /* styles for hover state */
+  }
+}
+
+/* Touch devices */
+@media (hover: none) {
+  a:active {
+      /* styles for active state */
+  }
+}
+
 h1 {
   font-family: 'Friends-very-bold', 'Neue-Machina', "Open Sans", sans-serif;
   font-size: 4.5rem;
