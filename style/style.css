@@ -42,16 +42,20 @@ html {
   list-style-type: none;
 }
 
+.link {
+  border: solid red
+}
+
 /* Non-touch devices */
 @media (hover: hover) {
-  a:hover {
+  .link:hover {
       /* styles for hover state */
   }
 }
 
 /* Touch devices */
 @media (hover: none) {
-  a:active {
+  .link:active {
       /* styles for active state */
   }
 }
