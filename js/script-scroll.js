@@ -26,10 +26,7 @@ function manageEventListener() {
     window.removeEventListener("scroll", reveal);
   } else {
     /* The viewport is greater than 700 pixels wide */
-    // Remove 'active' class from all '.reveal' elements and add back the scroll event listener
-    reveals.forEach(function (reveal) {
-      reveal.classList.remove("active");
-    });
+    // Add the scroll event listener without removing 'active' class from any '.reveal' elements
     window.addEventListener("scroll", reveal);
   }
 }

@@ -355,22 +355,20 @@ nav {
 }
 
 .icon-photo-1 {
-  transform: translateY(0rem) translateX(-1rem);
-  position: relative;
+  transform: translateY(-4rem) translateX(-5.5rem);
+  position: absolute;
   width: 9rem;
   height: 9rem;
-  border-radius: 100px;
-  border: solid .5rem white;
-  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .icon-photo-2 {
-  transform: rotate(25deg);
+  transform: translateY(-4rem) translateX(0rem) rotate(25deg);
   transition: .2s;
   width: 9rem;
   height: 9rem;
+  position: absolute;
   border-radius: 100px;
-  border: solid .5rem white;
+  border: solid 0.5rem white;
   box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
@@ -379,14 +377,11 @@ nav {
 }
 
 .icon-photo-3 {
-  transform: translateY(-.5rem) translateX(-.5rem) rotate(-15deg);
-  position: relative;
+  transform: translateY(3.5rem) translateX(0rem);
+  position: absolute;
   z-index: 100;
   width: 6rem;
   height: 6rem;
-  border-radius: 20px;
-  border: solid .5rem white;
-  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .photo {
@@ -421,13 +416,8 @@ nav {
   }
 
   .icon-photo {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .icon-photo-3 {
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 8rem;
   }
 
 }
@@ -515,18 +505,16 @@ nav {
 .icon-about-me {
   width: 5rem;
   height: 5rem;
-  border-radius: 100px;
-  border: solid .5rem white;
-  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .link-container {
   width: fit-content;
 }
 
-.link {
+.link-resume {
   color: #0004ff;
   text-decoration: underline;
+  margin-top: 3rem;
 }
 
 .hobbies-title {
@@ -556,15 +544,6 @@ nav {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1100px) {
-
-  .icon-about-me {
-    width: 3rem;
-    height: 3rem;
-  }
-
-}
-
 @media screen and (max-width: 600px) {
 
   .ask-me p {
@@ -587,10 +566,6 @@ nav {
 .icon-work {
   width: 5rem;
   height: 5rem;
-  border-radius: 20px;
-  transform: rotate(15deg) translateX(1rem) translateY(-1rem);
-  border: solid .5rem white;
-  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .tags {
@@ -705,15 +680,6 @@ nav {
   }
 }
 
-@media screen and (max-width: 1100px) {
-
-  .icon-work {
-    width: 3rem;
-    height: 3rem;
-  }
-
-}
-
 @media screen and (max-width: 600px) {
 
   .text-more-details p {
@@ -732,10 +698,6 @@ nav {
 .icon-globe {
   width: 5rem;
   height: 5rem;
-  border-radius: 100px;
-  transform: translate(0rem, -.5rem);
-  border: solid 7px white;
-  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .background-items-container {
@@ -743,34 +705,16 @@ nav {
 }
 
 .background-card {
-  display: flex;
-  border-radius: 20px;
-  background: none;
-  padding: 2.5rem;
-  text-decoration: none;
-  transition: 0.2s;
-  background-color: #eef1ff;
+  padding: 3rem 2.5rem;
 }
 
 .background-card:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-@media (hover: hover) {
-  .background-card:hover {
-    background-color: #e6ebff;
-  }
+  border-bottom: 1px solid #dddddd;
 }
 
 .background-info {
   display: flex;
   align-items: center;
-}
-
-.background-text {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
 }
 
 .background-visual {
@@ -789,23 +733,14 @@ nav {
   color: #000;
 }
 
-@media screen and (max-width: 1100px) {
-
-  .icon-globe {
-    width: 3rem;
-    height: 3rem;
-  }
-
-}
-
 @media screen and (max-width: 600px) {
 
   .background-card {
-    padding: 1.5 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .background-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: .5rem;
   }
@@ -826,10 +761,6 @@ nav {
 .icon-peace {
   width: 5rem;
   height: 5rem;
-  border-radius: 20px;
-  transform: rotate(-15deg) translateY(-1rem);
-  border: solid .5rem white;
-  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .container-contact-cards {
@@ -875,18 +806,9 @@ nav {
 }
 
 .subtitle-contact-card {
-  color: #000;
+  color: #949494;
   font-size: 1rem;
   line-height: 1.2rem;
-}
-
-@media screen and (max-width: 1100px) {
-
-  .icon-peace {
-    width: 3rem;
-    height: 3rem;
-  }
-
 }
 
 /* Footer */
@@ -970,36 +892,7 @@ nav {
     grid-template-columns: 1fr;
   }
 
-  .education_bloc {
-    display: block;
-    text-align: center;
-    margin: 10px auto;
-  }
-
-  .education_visual {
-    margin-right: 0px;
-    margin-bottom: 20px;
-    height: 80px;
-    width: 80px;
-  }
-
   .contact-card {
     border: solid 1px #dddddd;
-  }
-
-  .background-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .background-info, .background-info p {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .background-visual {
-    margin: 0 0 1.5rem 0;
   }
 }
