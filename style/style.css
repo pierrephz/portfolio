@@ -42,10 +42,6 @@ html {
   list-style-type: none;
 }
 
-body:not(.no-hover) a:hover {
-  /* styles for hover state */
-}
-
 b {
   font-family: 'Friends-bold';
 }
