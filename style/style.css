@@ -25,12 +25,14 @@
 
 body,
 html {
+  transition: background-color .3s ease, .05s color ease;
   overscroll-behavior-x: none;
   margin: 0;
   padding: 0;
   font-family: 'Friends', 'Open Sans', sans-serif;
   font-kerning: normal;
   background-color: #fff;
+  color: #000;
   scroll-behavior: smooth;
   cursor: default;
 }
@@ -40,6 +42,10 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+a {
+  color: inherit;
 }
 
 b {
@@ -53,7 +59,6 @@ p {
 }
 
 h2 {
-  color: #000;
   font-size: 1.7rem;
   line-height: 2rem;
   font-family: 'Friends-very-bold';
@@ -77,7 +82,6 @@ h2 {
 /* Assets / Margins */
 
 .title {
-  color: #000;
   font-family: 'Friends-very-bold', 'Neue-Machina', "Open Sans", sans-serif;
   font-size: 3.5rem;
   line-height: 3.5rem;
@@ -101,7 +105,6 @@ h2 {
 }
 
 .corps {
-  color: #000;
   font-size: 1.5rem;
   line-height: 2.3rem;
   font-family: 'Friends';
@@ -111,7 +114,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: solid 1px #000000;
 }
 
 .subcontainer {
@@ -120,13 +122,11 @@ h2 {
 }
 
 .container-work {
-  border-bottom: none;
-  padding: 10rem 0 0 0;
+  padding: 15rem 0 0 0;
 }
 
 .subcontainer-work {
   width: 60%;
-  border-bottom: 0;
 }
 
 .reveal {
@@ -147,7 +147,6 @@ h2 {
   display: flex;
   width: fit-content;
   border-radius: 100px;
-  color: #000;
   font-size: 1.2rem;
   border: solid 1px #000;
   text-align: center;
@@ -351,14 +350,38 @@ nav {
 }
 
 .name {
-  border-bottom: 2px solid #000;
+  border-bottom: .3rem solid #000;
 }
 
-.icon-photo-1 {
-  transform: translateY(-4rem) translateX(-5.5rem);
-  position: absolute;
+.icon-wave {
   width: 9rem;
   height: 9rem;
+}
+
+.shadow-icon-wave {
+  position: absolute;
+  transform: translateY(-4rem) translateX(-5.5rem);
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.2s; /* Added for a smoother start and end to the animation */
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-icon-wave:hover {
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0% { transform: translateY(-4rem) translateX(-5.5rem) rotate( 0.0deg); }
+  10% { transform: translateY(-4rem) translateX(-5.5rem) rotate(14.0deg); }
+  20% { transform: translateY(-4rem) translateX(-5.5rem) rotate(-8.0deg); }
+  30% { transform: translateY(-4rem) translateX(-5.5rem) rotate(14.0deg); }
+  40% { transform: translateY(-4rem) translateX(-5.5rem) rotate(-4.0deg); }
+  50% { transform: translateY(-4rem) translateX(-5.5rem) rotate(10.0deg); }
+  60% { transform: translateY(-4rem) translateX(-5.5rem) rotate( 0.0deg); }
+  100% { transform: translateY(-4rem) translateX(-5.5rem) rotate( 0.0deg); }
 }
 
 .icon-photo-2 {
@@ -373,15 +396,41 @@ nav {
 }
 
 .icon-photo-2:hover {
-  transform: scale(4);
+  transform: scale(3);
 }
 
-.icon-photo-3 {
-  transform: translateY(3.5rem) translateX(0rem);
-  position: absolute;
+.icon-brush {
   z-index: 100;
-  width: 6rem;
-  height: 6rem;
+  width: 9rem;
+  height: 9rem;
+  transition: transform 0.2s; /* Added to make the start/end of the wiggle animation smoother */
+}
+
+.shadow-icon-brush {
+  position: absolute;
+  transform: translateY(4rem) translateX(0rem) rotate(-15deg);
+  width: 9rem;
+  height: 9rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-icon-brush:hover {
+  animation: write 2s ease-in-out infinite;
+}
+
+@keyframes write {
+  0% { transform: translateX(0rem) translateY(4rem) rotate(-15deg); }
+  10% { transform: translateX(0.2rem) translateY(4rem) rotate(-10deg); }
+  20% { transform: translateX(0.4rem) translateY(4rem) rotate(-20deg); }
+  30% { transform: translateX(0.6rem) translateY(4rem) rotate(-10deg); }
+  40% { transform: translateX(0.8rem) translateY(4rem) rotate(-20deg); }
+  50% { transform: translateX(1rem) translateY(4rem) rotate(-10deg); }
+  60% { transform: translateX(0.8rem) translateY(4rem) rotate(-15deg); }
+  70% { transform: translateX(0.6rem) translateY(4rem) rotate(-15deg); }
+  80% { transform: translateX(0.4rem) translateY(4rem) rotate(-15deg); }
+  100% { transform: translateX(0rem) translateY(4rem) rotate(-15deg); }
 }
 
 .photo {
@@ -415,9 +464,14 @@ nav {
     width: 90vw;
   }
 
-  .icon-photo {
-    width: 8rem;
-    height: 8rem;
+  .shadow-icon-wave, .icon-photo {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .shadow-icon-brush, .icon-brush {
+    width: 6rem;
+    height: 6rem;
   }
 
 }
@@ -438,7 +492,7 @@ nav {
     text-align: left;
   }
 
-  .icon-photo {
+  .icon-photo, .shadow-icon-wave, .shadow-icon-brush {
     display: none;
   }
 
@@ -496,7 +550,6 @@ nav {
 /* About me */
 
 .container-about {
-  background-color: #f8f9ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -512,7 +565,6 @@ nav {
 }
 
 .link-resume {
-  color: #0004ff;
   text-decoration: underline;
   margin-top: 3rem;
 }
@@ -530,7 +582,6 @@ nav {
 .hobbies-item p {
   border: solid 1px #dedede;
   font-size: 1.2rem;
-  background-color: #fff;
   padding: .4rem 1rem;
   border-radius: 15px;
 }
@@ -540,7 +591,6 @@ nav {
 }
 
 .ask-me a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -578,7 +628,7 @@ nav {
 
 .tags p {
   font-size: 1rem;
-  color: #1a1a1a;
+  color: #252525;
   background-color: #f4f4f4;
   border-radius: 100px;
   padding: .2rem 1rem;
@@ -660,24 +710,18 @@ nav {
 }
 
 .text-more-details a {
-  color: #000;
   text-decoration: none;
 }
 
 .more-details-email {
   border-bottom: solid 1px #cecece;
   padding-bottom: .1rem;
-  transition: 0.2s;
+  transition-property: border-bottom;
+  transition-duration: 0.2s;
 }
 
 .more-details-email:hover {
   border-bottom: solid 1px #7d7d7d;
-}
-
-@media (hover: hover) {
-  .more-details-email:hover {
-    border-bottom: solid 1px #7d7d7d;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -690,10 +734,6 @@ nav {
 
 
 /* Background */
-
-.container-background {
-  background-color: #f8f9ff;
-}
 
 .icon-globe {
   width: 5rem;
@@ -709,7 +749,7 @@ nav {
 }
 
 .background-card:not(:last-child) {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .background-info {
@@ -725,12 +765,7 @@ nav {
 
 .background-name {
   font-family: 'Friends-very-bold', 'Open Sans', sans-serif;
-  color: #000;
   font-size: 1.5rem;
-}
-
-.background-corps {
-  color: #000;
 }
 
 @media screen and (max-width: 600px) {
@@ -801,7 +836,6 @@ nav {
 
 .title-contact-card {
   font-family: 'Friends-bold', 'Open Sans', sans-serif;
-  color: #000;
   line-height: 1.2rem;
 }
 
@@ -814,13 +848,19 @@ nav {
 /* Footer */
 
 .credits {
+  border-top: solid 1px #000;
   color: #6b6b6b;
   padding: 0.75rem 0;
   text-align: center;
   transition: 0.2s;
 }
 
-.credits:hover {
+.credits p {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.credits p:hover {
   color: #000;
 }
 

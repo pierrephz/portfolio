@@ -53,10 +53,10 @@
       </div>
     </nav>
 
-    <div id="home" class="container-home">
+    <div id="home" class="container-home section" data-bg-color="#fff" data-text-color="#000">
       <div class="subcontainer-home">
         <img class="photo-mobile" src="assets/img/pierre-profile-picture-blue.png" alt="pierre-photo">
-        <p class="title"><span><img class="icon-photo icon-photo-1" src="assets/img/icons/waving-hand.png" alt=""></span>Welcome, I'm <span class="name"> Pierre Philouze</span>, <span><img class="icon-photo icon-photo-2" src="assets/img/pierre-profile-picture-blue.png" alt="pierre-photo"></span><br/>a versatile product designer who creates user friendly interfaces, <span><img class="icon-photo icon-photo-3" src="assets/img/icons/paintbrush.png" alt=""></span> mostly.</p>
+        <p class="title"><span class="shadow-icon-wave"><img class="icon-photo icon-wave" src="assets/img/icons/waving-hand.png" alt=""></span>Welcome, I'm <span class="name">Pierre Philouze</span>, <span><img class="icon-photo icon-photo-2" src="assets/img/pierre-profile-picture-blue.png" alt="pierre-photo"></span><br/>a versatile product designer who creates user friendly interfaces, <span class="shadow-icon-brush"><img class="icon-photo icon-brush" src="assets/img/icons/paintbrush.png" alt=""></span> mostly.</p>
        <a class="drop-me-a-line" href="mailto:pierre.philouze@gmail.com">
         <p><b>Get in touch ↗</b></p>
        </a>
@@ -72,7 +72,7 @@
 
     <div id="about-me" class="container-about">
       <div class="subcontainer">
-        <p class="title reveal">About me <span><img class="icon-about-me" src="assets/img/icons/seedling.png" alt=""></span></p>
+        <p class="title reveal section" data-bg-color="#000" data-text-color="#fff">About me <span><img class="icon-about-me" src="assets/img/icons/seedling.png" alt=""></span></p>
         <div class="reveal">
           <div class="paragraph">
             <p class="corps">
@@ -100,7 +100,7 @@
               </a>
             </div>
           </div>
-          <h2 class="hobbies-title">Current interests:</h2>
+          <h2 class="hobbies-title section" data-bg-color="#000" data-text-color="#fff">Current interests:</h2>
           <div class="hobbies-item">
             <p class="corps">🏺 Ceramics</p>
             <p class="corps">🌳 Bonsai</p>
@@ -120,14 +120,14 @@
 
     <!-- My work -->
 
-    <div id="my-work" class="container container-work reveal active">
+    <div id="my-work" class="container container-work reveal">
       <div class="subcontainer-work">
-        <p class="title">My work <span><img class="icon-work" src="assets/img/icons/sparkles.png" alt=""></span></p>
+        <p class="title section" data-bg-color="#fff" data-text-color="#000">My work <span><img class="icon-work" src="assets/img/icons/sparkles.png" alt=""></span></p>
         <p class="corps">Product design (mostly).</p>
       </div>
     </div>
 
-    <div class="work-grid-container reveal">
+    <div class="work-grid-container reveal section" data-bg-color="#fff" data-text-color="#000">
       <div class="work-cell">
         <a href="project-design-system.html" class="link">
           <div class="project-cover cover-design-system"></div>
@@ -196,7 +196,7 @@
           </div>
         </div>
       </div>
-      <div class="work-cell">
+      <div class="work-cell section" data-bg-color="#fff" data-text-color="#000">
         <a href="project-ttc.html">
           <div class="project-cover cover-ttc"></div>
         </a>
@@ -223,7 +223,7 @@
     <div id="background" class="container container-background">
       <div class="subcontainer">
         <div class="reveal">
-          <p class="title">My journey <span><img class="icon-globe" src="assets/img/icons/globe.png" alt=""></span></p>
+          <p class="title section" data-bg-color="#000" data-text-color="#fff">My journey <span><img class="icon-globe" src="assets/img/icons/globe.png" alt=""></span></p>
           <p class="corps">Through France, China and Netherlands.</p>
         </div>
         <div class="background-items-container">
@@ -233,7 +233,7 @@
               <div class="background-text">
                 <a href="https://www.thethingsindustries.com/" target="blank" class="background-name">The Things Industries ↗</a>
                 <p class="background-corps">
-                  <b>Interaction designer</b><br />Amsterdam (Netherlands) —
+                  <b>UI / UX designer</b><br />Amsterdam (Netherlands) —
                   2019 - Today
                 </p>
               </div>
@@ -278,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="background-card reveal">
+          <div class="background-card reveal section" data-bg-color="#000" data-text-color="#fff">
             <div class="background-info">
               <img class="background-visual" src="assets/img/background/icon-cl-corp.png" alt="" />
               <div class="background-text">
@@ -311,7 +311,7 @@
       <div class="subcontainer">
         <div>
           <div class="reveal">
-            <p class="title">Contact me <span><img class="icon-peace" src="assets/img/icons/peace.png" alt=""></span></p>
+            <p class="title section" data-bg-color="#fff" data-text-color="#000">Contact me <span><img class="icon-peace" src="assets/img/icons/peace.png" alt=""></span></p>
             <p class="corps">Or find me on social media.</p>
           </div>
           <div class="reveal">
@@ -356,6 +356,7 @@
     </div>
 
     <script src="js/script-nav-bar.js"></script>
+    <script src="js/backgroud-color-transition.js"></script>
     <script src="js/script-scroll.js"></script>
   </body>
 </html>
