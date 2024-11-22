@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Mori-bold';
-  src: url('../assets/fonts/Mori/PPMori-SemiBold.ttf');
-}
-
-@font-face {
-  font-family: 'Mori-regular';
-  src: url('../assets/fonts/Mori/PPMori-Regular.ttf');
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,9 +8,9 @@
 
 body,
 html {
-  transition: background-color .3s ease, .05s color ease;
+  /* transition: background-color .3s ease, .05s color ease; */
   overscroll-behavior-x: none;
-  font-family: 'Mori-regular', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   font-kerning: normal;
   scroll-behavior: smooth;
   cursor: default;
@@ -62,13 +52,13 @@ a:hover .arrow-page-link {
 
 
 b {
-  font-family: 'Mori-bold', sans-serif;
+  font-family: system-ui;
+  font-weight: 600;
 }
 
 p {
   font-size: 1.5rem;
   line-height: 2.3rem;
-  padding-top: 4px;
   color: #3b3b3b;
 }
 
@@ -80,15 +70,16 @@ p {
 h1 {
   font-size: 4rem;
   line-height: 4.5rem;
-  font-family: 'Mori-bold', sans-serif;
-  letter-spacing: -.02rem;
+  font-weight: 600;
+  letter-spacing: -.04rem;
   color: #242424;
 }
 
 h2 {
   font-size: 3rem;
   line-height: 3.5rem;
-  font-family: 'Mori-bold', sans-serif;
+  font-family: system-ui;
+  font-weight: 600;
   letter-spacing: -.02rem;
   color: #242424;
 }
@@ -96,13 +87,18 @@ h2 {
 h3 {
   font-size: 1.5rem;
   line-height: 2.8rem;
-  font-family: 'Mori-bold', sans-serif;
+  font-family: system-ui;
+  font-weight: 600;
   letter-spacing: -.02rem;
   color: #242424;
 }
 
 .responsive-break {
   display: none;
+}
+
+.responsive-space {
+  display: inline-block;
 }
 
 .paragraph {
@@ -224,7 +220,6 @@ nav {
   transition: color 0.2s;
   font-size: 1.8rem;
   font-weight: 700;
-  font-family: 'Mori-bold', sans-serif;
 }
 
 .hamburger {
@@ -232,8 +227,6 @@ nav {
 }
 
 .navlinks-container a {
-  font-family: 'Mori', sans-serif;
-  text-decoration: none;
   transition: color 0.2s;
   padding: .6rem 1rem;
   border-radius: 10px;
@@ -250,7 +243,7 @@ nav {
     color: #4359e8;
   }
   .navlinks-container a:hover {
-    background-color: #eaeaea;
+    color: #4359e8;
   }
 }
 
@@ -266,7 +259,6 @@ nav {
   }
 
   .nav-icon {
-    order: 2;
     font-size: 1.5rem;
   }
 
@@ -285,14 +277,13 @@ nav {
     display: block;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #3b3b3b;
     position: absolute;
     pointer-events: none;
     transition: opacity .3s .15s ease-out;
   }
 
   .hamburger span:hover {
-    background: #0004ff;
     transition: .2s ease-in-out;
   }
 
@@ -333,9 +324,8 @@ nav {
     width: 100vw;
     height: 100vh;
     padding: 15% 1.5rem 1rem 15%;
-    transform: translate(-100%);
-    background-color: #fff;
-    backdrop-filter: blur(10px);
+    transform: translate(100%);
+    background: rgba(250, 248, 247, 0.95);
   }
 
   .navlinks-container.open {
@@ -344,6 +334,7 @@ nav {
 
   .navlinks-container a {
     margin-right: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -351,11 +342,6 @@ nav {
 
   nav {
     padding: .5rem 1rem;
-  }
-
-  .nav-icon {
-    order: 2;
-    font-size: 1.5rem;
   }
 }
 
@@ -566,7 +552,6 @@ nav {
 }
 
 
-
 .soft-highlight {
   color: #3b3b3b;
 }
@@ -629,27 +614,8 @@ nav {
   padding-bottom: 5rem;
 }
 
-.icon-work {
-  width: 5rem;
-  height: 5rem;
-}
-
 .date {
-  font-size: 1.2rem;
   color: #858585;
-}
-
-.project-name h3 {
-  line-height: 2.2rem;
-}
-
-.date, .project-name a, .project-subtitle {
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-}
-
-.project-subtitle {
-  line-height: 1.8rem;
 }
 
 .project-name {
@@ -664,7 +630,6 @@ nav {
   flex-wrap: wrap;
   gap: .6rem;
   margin: 1rem 0;
-  font-size: .8rem;
 }
 
 .tags p {
@@ -672,7 +637,7 @@ nav {
   color: #858585;
   background-color: #f0f0ef;
   border-radius: 100px;
-  padding: .1rem .8rem 0 .8rem;
+  padding: .1rem .8rem;
 }
 
 .project-cover {
@@ -754,11 +719,6 @@ nav {
 
 /* Journey */
 
-.icon-globe {
-  width: 5rem;
-  height: 5rem;
-}
-
 .journey-items-container {
   margin-top: 5rem;
 }
@@ -782,24 +742,12 @@ nav {
 .journey-visual {
   margin-right: 2rem;
   height: 6rem;
-  width: 6rem;
-}
-
-@media screen and (max-width: 900px) {
-
-
-
 }
 
 /* Contact */
 
 .container-contact {
   height: 95.4vh;
-}
-
-.icon-peace {
-  width: 5rem;
-  height: 5rem;
 }
 
 .contact-text {
@@ -824,11 +772,11 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1.6rem 1.6rem;
+  padding: 1.6rem;
   transition: 0.2s;
-  text-decoration: none;
   background-color: #F7F3F2;
   position: relative;
+  text-decoration: none;
 }
 
 .contact-card:hover {
@@ -849,7 +797,8 @@ nav {
 }
 
 .title-contact-card {
-  font-family: 'Mori-bold', sans-serif;
+  font-family: system-ui;
+  font-weight: 600;
 }
 
 .subtitle-contact-card {
@@ -908,7 +857,7 @@ nav {
 }
 
 .credits p:hover {
-  color: #000;
+  color: #747474;
 }
 
 .credits p {
@@ -949,7 +898,6 @@ nav {
     font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 300;
-    text-decoration: none;
   }
 
   h1 {
@@ -991,20 +939,12 @@ nav {
 
   .container-home {
     height: fit-content;
-    padding: 14rem 0 10rem 0;
+    padding: 8rem 0;
     cursor: default;
   }
 
   .hero-title {
-    line-height: 3rem;
     font-size: 3rem;
-  }
-
-  .shape {
-    margin-left: .5rem;
-    width: 3rem;
-    height: 3rem;
-    transform: translateY(.5rem);
   }
 
   .hero-title-CTA {
@@ -1046,6 +986,10 @@ nav {
     margin-left: .5rem;
   }
 
+  .project-subtitle {
+    margin-top: .5rem;
+  }
+
   .text-more-details {
     width: 90vw;
     margin: 0 auto;
@@ -1072,17 +1016,12 @@ nav {
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 2.2rem;
   }
 
   h3 {
     font-size: 1.3rem;
-    line-height: 1.8rem;
-  }
-
-  p {
-    font-size: 1,2rem;
     line-height: 1.8rem;
   }
 
@@ -1097,7 +1036,7 @@ nav {
   }
 
   .hero-title {
-    line-height: 2.8rem;
+    line-height: 3rem;
     font-size: 2.5rem;
   }
 
@@ -1125,12 +1064,23 @@ nav {
     width: 4rem;
   }
 
+  .flagship-project {
+    background-color: inherit;
+    border: none;
+    border-radius: 0px;
+    padding: 0;
+  }
+
 }
 
 @media screen and (max-width: 660px) {
 
   .responsive-break {
     display: inline-block;
+  }
+
+  .responsive-space {
+    display: none;
   }
 
   .icon-hero {
@@ -1142,17 +1092,8 @@ nav {
   }
 
   .tag-item {
-    padding: .4rem .8rem;
     flex: auto;
     justify-content: center;
-  }
-
-  .tag-item img {
-    width: 1.2rem;
-  }
-
-  .tag-item p {
-    font-size: 1rem;
   }
 
 }

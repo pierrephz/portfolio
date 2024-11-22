@@ -2,12 +2,15 @@
 
 // Add handwave animation function
 function animateHandwave() {
-  const handwaveIcon = document.querySelector(".icon-wave");
-  if (handwaveIcon) {
-    handwaveIcon.classList.add("wave");
-    setTimeout(() => {
-      handwaveIcon.classList.remove("wave");
-    }, 1000); // Assume the animation duration is 1 second
+  if (window.innerWidth >= 660) {
+    // Ensure animation only shows on screens 660px and above
+    const handwaveIcon = document.querySelector(".icon-wave");
+    if (handwaveIcon) {
+      handwaveIcon.classList.add("wave");
+      setTimeout(() => {
+        handwaveIcon.classList.remove("wave");
+      }, 1000); // Assume the animation duration is 1 second
+    }
   }
 }
 
@@ -30,10 +33,13 @@ window.addEventListener("load", () => {
 // Play handwave animation on hover
 document.querySelectorAll(".icon-wave").forEach((icon) => {
   icon.addEventListener("mouseenter", () => {
-    icon.classList.add("wave");
-    setTimeout(() => {
-      icon.classList.remove("wave");
-    }, 1000); // Assume the animation duration is 1 second
+    if (window.innerWidth >= 660) {
+      // Ensure hover animation only shows on screens 660px and above
+      icon.classList.add("wave");
+      setTimeout(() => {
+        icon.classList.remove("wave");
+      }, 1000); // Assume the animation duration is 1 second
+    }
   });
 });
 
@@ -78,45 +84,41 @@ style.innerHTML = `
   }
 
   @media screen and (max-width: 1100px) {
+    @keyframes handwave {
+      0% { transform: translateY(.8rem) rotate(0deg); transform-origin: bottom; }
+      20% { transform: translateY(.8rem) rotate(14deg); transform-origin: bottom; }
+      40% { transform: translateY(.8rem) rotate(-8deg); transform-origin: bottom; }
+      60% { transform: translateY(.8rem) rotate(14deg); transform-origin: bottom; }
+      80% { transform: translateY(.8rem) rotate(-4deg); transform-origin: bottom; }
+      100% { transform: translateY(.8rem) rotate(0deg); transform-origin: bottom; }
+    }
 
-  @keyframes handwave {
-    0% { transform: translateY(.8rem) rotate(0deg); transform-origin: bottom; }
-    20% { transform: translateY(.8rem) rotate(14deg); transform-origin: bottom; }
-    40% { transform: translateY(.8rem) rotate(-8deg); transform-origin: bottom; }
-    60% { transform: translateY(.8rem) rotate(14deg); transform-origin: bottom; }
-    80% { transform: translateY(.8rem) rotate(-4deg); transform-origin: bottom; }
-    100% { transform: translateY(.8rem) rotate(0deg); transform-origin: bottom; }
+    @keyframes compassSpin {
+      0% { transform: translateY(.8rem) rotate(0deg); }
+      25% { transform: translateY(.8rem) rotate(90deg); }
+      50% { transform: translateY(.8rem) rotate(180deg); }
+      75% { transform: translateY(.8rem) rotate(270deg); }
+      100% { transform: translateY(.8rem) rotate(360deg); }
+    }
   }
 
-  @keyframes compassSpin {
-    0% { transform: translateY(.8rem) rotate(0deg); }
-    25% { transform: translateY(.8rem) rotate(90deg); }
-    50% { transform: translateY(.8rem) rotate(180deg); }
-    75% { transform: translateY(.8rem) rotate(270deg); }
-    100% { transform: translateY(.8rem) rotate(360deg); }
-  }
+  @media screen and (max-width: 800px) {
+    @keyframes handwave {
+      0% { transform: translateY(.5rem) rotate(0deg); transform-origin: bottom; }
+      20% { transform: translateY(.5rem) rotate(14deg); transform-origin: bottom; }
+      40% { transform: translateY(.5rem) rotate(-8deg); transform-origin: bottom; }
+      60% { transform: translateY(.5rem) rotate(14deg); transform-origin: bottom; }
+      80% { transform: translateY(.5rem) rotate(-4deg); transform-origin: bottom; }
+      100% { transform: translateY(.5rem) rotate(0deg); transform-origin: bottom; }
+    }
 
-  }
-
-    @media screen and (max-width: 800px) {
-
-  @keyframes handwave {
-    0% { transform: translateY(.5rem) rotate(0deg); transform-origin: bottom; }
-    20% { transform: translateY(.5rem) rotate(14deg); transform-origin: bottom; }
-    40% { transform: translateY(.5rem) rotate(-8deg); transform-origin: bottom; }
-    60% { transform: translateY(.5rem) rotate(14deg); transform-origin: bottom; }
-    80% { transform: translateY(.5rem) rotate(-4deg); transform-origin: bottom; }
-    100% { transform: translateY(.5rem) rotate(0deg); transform-origin: bottom; }
-  }
-
-  @keyframes compassSpin {
-    0% { transform: translateY(.5rem) rotate(0deg); }
-    25% { transform: translateY(.5rem) rotate(90deg); }
-    50% { transform: translateY(.5rem) rotate(180deg); }
-    75% { transform: translateY(.5rem) rotate(270deg); }
-    100% { transform: translateY(.5rem) rotate(360deg); }
-  }
-
+    @keyframes compassSpin {
+      0% { transform: translateY(.5rem) rotate(0deg); }
+      25% { transform: translateY(.5rem) rotate(90deg); }
+      50% { transform: translateY(.5rem) rotate(180deg); }
+      75% { transform: translateY(.5rem) rotate(270deg); }
+      100% { transform: translateY(.5rem) rotate(360deg); }
+    }
   }
 `;
 document.head.appendChild(style);
