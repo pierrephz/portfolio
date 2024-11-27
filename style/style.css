@@ -30,9 +30,14 @@ a:hover {
   text-decoration-color: rgba(0, 0, 0, 0.1);
 }
 
-.arrow-external-link, .arrow-external-link-horizontal, .arrow-page-link {
+.arrow-external-link, .arrow-external-link-horizontal, .arrow-external-link-horizontal-left, .arrow-page-link {
   display: inline-block;
   transition: transform 0.2s, color 0.2s;
+}
+
+a:hover .arrow-external-link-horizontal-left {
+  transform: translateX(-2px); /* Moves arrow up and slightly rotates it */
+  color: #4359e8;
 }
 
 a:hover .arrow-external-link {
@@ -211,6 +216,7 @@ nav {
   backdrop-filter: blur(300px);
   -webkit-backdrop-filter: blur(300px);
   z-index: 20;
+  top: 0;
 }
 
 .nav-icon {
@@ -238,13 +244,11 @@ nav {
   margin-right: .1rem;
 }
 
-@media (hover: hover) {
-  .nav-icon:hover {
-    color: #4359e8;
-  }
-  .navlinks-container a:hover {
-    color: #4359e8;
-  }
+.nav-icon:hover {
+  color: #4359e8;
+}
+.navlinks-container a:hover {
+  color: #4359e8;
 }
 
 @media (max-width: 900px) {
@@ -634,8 +638,8 @@ nav {
 
 .tags p {
   font-size: 1rem;
-  color: #858585;
-  background-color: #f0f0ef;
+  color: #838383;
+  background-color: #ececeb;
   border-radius: 100px;
   padding: .1rem .8rem;
 }
@@ -646,6 +650,14 @@ nav {
   height: 20rem;
   margin-bottom: 1.5rem;
   transition: .2s ease-in-out;
+}
+
+.project-cover-coming-soon {
+  border-radius: 20px;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 1.5rem;
+  transition: none;
 }
 
 .flagship-project {
