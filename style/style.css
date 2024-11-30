@@ -647,17 +647,9 @@ nav {
 .project-cover {
   border-radius: 20px;
   width: 100%;
-  height: 20rem;
   margin-bottom: 1.5rem;
   transition: .2s ease-in-out;
-}
-
-.project-cover-coming-soon {
-  border-radius: 20px;
-  width: 100%;
-  height: 20rem;
-  margin-bottom: 1.5rem;
-  transition: none;
+  border: solid 1px #e0e0e0;
 }
 
 .flagship-project {
@@ -666,52 +658,6 @@ nav {
   border: solid 4px #F5F2F0;
   border-radius: 44px;
   padding: 1.5rem;
-}
-
-.flagship-project .project-cover {
-  height: 30rem;
-}
-
-.cover-console {
-  background-image: url(../assets/img/project/console/console-general-visual.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-design-system {
-  background-image: url(../assets/img/project/design-system/design-system-general-visual.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-billing-flow {
-  background-image: url(../assets/img/project/billing-flow/billing-flow-general-visual.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-landing-page {
-  background-image: url(../assets/img/project/landing-page/landing-page-general-visual.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-tenant-creation {
-  background-image: url(../assets/img/project/tenant-creation/tenant-creation-general-visual.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cover-ttc {
-  background-image: url(../assets/img/project/ttc/ttc-general-visual.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 @media (hover: hover) {
@@ -880,10 +826,6 @@ nav {
 
 @media screen and (min-width: 1700px) {
 
-  .project-cover {
-    height: 30rem;
-  }
-
   .subcontainer-contact,
   .subcontainer-work,
   .subcontainer-about,
@@ -988,10 +930,6 @@ nav {
 
   .flagship-project {
     grid-column: span 1;
-  }
-
-  .flagship-project .project-cover {
-    height: 20rem;
   }
 
   .project-name {
