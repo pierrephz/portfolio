@@ -10,8 +10,8 @@
 # attention méthode intermédiaire
 #
 # seuls 2 enregistrements A à modifier (juillet 2023)
-#    un enregistrement A pour pierrephilouze.com vers IP SCALEWAY 
-#    un enregistrement A pour www.pierrephilouze.com vers IP SCALEWAY 
+#    un enregistrement A pour pierrephilouze.com vers IP SCALEWAY
+#    un enregistrement A pour www.pierrephilouze.com vers IP SCALEWAY
 # -> Evite de bouleverser le tout avec la gestion de la messagerie...
 #
 #    "" A 163.172.149.25
@@ -38,7 +38,12 @@ SSH_HOST=163.172.149.25
 #ssh $SSH_USER@$SSH_HOST "mkdir -p /var/www/pierrephilouze.com/html"
 
 # copy dist into dir
-scp -r $DIST_DIR/assets $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
-scp -r $DIST_DIR/js $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
-scp -r $DIST_DIR/style $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
-scp -r $DIST_DIR/*.html $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
+# scp -r $DIST_DIR/assets $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
+# scp -r $DIST_DIR/js $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
+# scp -r $DIST_DIR/style $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
+# scp -r $DIST_DIR/*.html $SSH_USER@$SSH_HOST:/var/www/pierrephilouze.com/html/.
+
+scp -r assets root@163.172.149.25:/var/www/pierrephilouze.com/html/.
+scp -r js root@163.172.149.25:/var/www/pierrephilouze.com/html/.
+scp -r style root@163.172.149.25:/var/www/pierrephilouze.com/html/.
+scp -r *.html root@163.172.149.25:/var/www/pierrephilouze.com/html/.
