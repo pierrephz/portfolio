@@ -139,10 +139,17 @@ u {
   align-items: center;
 }
 
+.error-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .link-error-page-container {
   display: flex;
+  flex-direction: column;
+  width: 100%;
   gap: 2rem;
-  padding: 1rem;
 }
 
 /* General selection style */
@@ -552,7 +559,7 @@ nav {
 }
 
 .paragraph-about {
-  color: #808080;
+  color: #929292;
 }
 
 
@@ -649,7 +656,7 @@ nav {
   width: 100%;
   margin-bottom: 1.5rem;
   transition: .2s ease-in-out;
-  border: solid 1px #e0e0e0;
+  border: solid 1px #ededed;
 }
 
 .flagship-project {
