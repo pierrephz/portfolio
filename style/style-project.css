@@ -173,6 +173,12 @@
 
 .intro {
   display: flex;
+  padding: 4rem 0;
+  margin: 6rem auto 12rem auto;
+  width: 90vw;
+  gap: 4rem;
+  border-top: solid 1px #e2e2e2;
+  border-bottom: solid 1px #e2e2e2;
 }
 
 .my-role, .benefits {
@@ -214,11 +220,13 @@
 
 .visual-container {
   width: 50%;
+  height: fit-content;
+  border: solid 3px #F7F3F2;
   box-shadow:
   0px 2.7px 5.3px rgba(0, 0, 0, 0.02),
   0px 8.9px 17.9px rgba(0, 0, 0, 0.03),
   0px 40px 80px rgba(0, 0, 0, 0.0.5);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 
@@ -237,7 +245,7 @@
   align-items: center;
   background-color: #F2EEEB;
   padding: 1.2rem 1.5rem;
-  border-radius: 15px;
+  border-radius: 10px;
   width: fit-content;
   gap: 1rem;
 }
@@ -273,7 +281,7 @@
   justify-content: center;
   text-align: center;
   transition: 0.1s;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #F7F3F2;
 }
 
@@ -289,7 +297,7 @@
 
 @media screen and (min-width: 1700px) {
 
-  .description {
+  .description, .intro {
     width: 60vw;
   }
 
@@ -315,7 +323,7 @@
 
 @media screen and (max-width: 800px) {
 
-  .description {
+  .description, .intro {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;

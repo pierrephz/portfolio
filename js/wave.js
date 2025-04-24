@@ -57,12 +57,12 @@ document.querySelectorAll(".icon-compass").forEach((icon) => {
 const style = document.createElement("style");
 style.innerHTML = `
   @keyframes handwave {
-    0% { transform: translateY(1rem) rotate(0deg); transform-origin: bottom; }
-    20% { transform: translateY(1rem) rotate(14deg); transform-origin: bottom; }
-    40% { transform: translateY(1rem) rotate(-8deg); transform-origin: bottom; }
-    60% { transform: translateY(1rem) rotate(14deg); transform-origin: bottom; }
-    80% { transform: translateY(1rem) rotate(-4deg); transform-origin: bottom; }
-    100% { transform: translateY(1rem) rotate(0deg); transform-origin: bottom; }
+    0% { transform: translateY(-.5rem) rotate(0deg); transform-origin: bottom; }
+    20% { transform: translateY(-.5rem) rotate(14deg); transform-origin: bottom; }
+    40% { transform: translateY(-.5rem) rotate(-8deg); transform-origin: bottom; }
+    60% { transform: translateY(-.5rem) rotate(14deg); transform-origin: bottom; }
+    80% { transform: translateY(-.5rem) rotate(-4deg); transform-origin: bottom; }
+    100% { transform: translateY(-.5rem) rotate(0deg); transform-origin: bottom; }
   }
 
   .icon-wave.wave {
@@ -71,11 +71,11 @@ style.innerHTML = `
   }
 
   @keyframes compassSpin {
-    0% { transform: translateY(1rem) rotate(0deg); }
-    25% { transform: translateY(1rem) rotate(90deg); }
-    50% { transform: translateY(1rem) rotate(180deg); }
-    75% { transform: translateY(1rem) rotate(270deg); }
-    100% { transform: translateY(1rem) rotate(360deg); }
+    0% { transform: translateY(-.5rem) rotate(0deg); }
+    25% { transform: translateY(-.5rem) rotate(90deg); }
+    50% { transform: translateY(-.5rem) rotate(180deg); }
+    75% { transform: translateY(-.5rem) rotate(270deg); }
+    100% { transform: translateY(-.5rem) rotate(360deg); }
   }
 
   .icon-compass.spin {
@@ -85,39 +85,39 @@ style.innerHTML = `
 
   @media screen and (max-width: 1100px) {
     @keyframes handwave {
-      0% { transform: translateY(.8rem) rotate(0deg); transform-origin: bottom; }
-      20% { transform: translateY(.8rem) rotate(14deg); transform-origin: bottom; }
-      40% { transform: translateY(.8rem) rotate(-8deg); transform-origin: bottom; }
-      60% { transform: translateY(.8rem) rotate(14deg); transform-origin: bottom; }
-      80% { transform: translateY(.8rem) rotate(-4deg); transform-origin: bottom; }
-      100% { transform: translateY(.8rem) rotate(0deg); transform-origin: bottom; }
+      0% { transform: translateY(-.5rem) rotate(0deg); transform-origin: bottom; }
+      20% { transform: translateY(-.5rem) rotate(14deg); transform-origin: bottom; }
+      40% { transform: translateY(-.5rem) rotate(-8deg); transform-origin: bottom; }
+      60% { transform: translateY(-.5rem) rotate(14deg); transform-origin: bottom; }
+      80% { transform: translateY(-.5rem) rotate(-4deg); transform-origin: bottom; }
+      100% { transform: translateY(-.5rem) rotate(0deg); transform-origin: bottom; }
     }
 
     @keyframes compassSpin {
-      0% { transform: translateY(.8rem) rotate(0deg); }
-      25% { transform: translateY(.8rem) rotate(90deg); }
-      50% { transform: translateY(.8rem) rotate(180deg); }
-      75% { transform: translateY(.8rem) rotate(270deg); }
-      100% { transform: translateY(.8rem) rotate(360deg); }
+      0% { transform: translateY(-.5rem) rotate(0deg); }
+      25% { transform: translateY(-.5rem) rotate(90deg); }
+      50% { transform: translateY(-.5rem) rotate(180deg); }
+      75% { transform: translateY(-.5rem) rotate(270deg); }
+      100% { transform: translateY(-.5rem) rotate(360deg); }
     }
   }
 
   @media screen and (max-width: 800px) {
     @keyframes handwave {
-      0% { transform: translateY(.5rem) rotate(0deg); transform-origin: bottom; }
-      20% { transform: translateY(.5rem) rotate(14deg); transform-origin: bottom; }
-      40% { transform: translateY(.5rem) rotate(-8deg); transform-origin: bottom; }
-      60% { transform: translateY(.5rem) rotate(14deg); transform-origin: bottom; }
-      80% { transform: translateY(.5rem) rotate(-4deg); transform-origin: bottom; }
-      100% { transform: translateY(.5rem) rotate(0deg); transform-origin: bottom; }
+      0% { transform: translateY(-.2rem) rotate(0deg); transform-origin: bottom; }
+      20% { transform: translateY(-.2rem) rotate(14deg); transform-origin: bottom; }
+      40% { transform: translateY(-.2rem) rotate(-8deg); transform-origin: bottom; }
+      60% { transform: translateY(-.2rem) rotate(14deg); transform-origin: bottom; }
+      80% { transform: translateY(-.2rem) rotate(-4deg); transform-origin: bottom; }
+      100% { transform: translateY(-.2rem) rotate(0deg); transform-origin: bottom; }
     }
 
     @keyframes compassSpin {
-      0% { transform: translateY(.5rem) rotate(0deg); }
-      25% { transform: translateY(.5rem) rotate(90deg); }
-      50% { transform: translateY(.5rem) rotate(180deg); }
-      75% { transform: translateY(.5rem) rotate(270deg); }
-      100% { transform: translateY(.5rem) rotate(360deg); }
+      0% { transform: translateY(-.2rem) rotate(0deg); }
+      25% { transform: translateY(-.2rem) rotate(90deg); }
+      50% { transform: translateY(-.2rem) rotate(180deg); }
+      75% { transform: translateY(-.2rem) rotate(270deg); }
+      100% { transform: translateY(-.2rem) rotate(360deg); }
     }
   }
 `;
