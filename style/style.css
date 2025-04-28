@@ -374,7 +374,7 @@ nav {
 }
 
 .subcontainer-home {
-  max-width: 70vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -1041,10 +1041,19 @@ nav {
 
   .container-contact {
     margin-top: 8rem;
+    border-radius: 0px;
+    background-color: inherit;
+    padding: 5rem 0 1rem 0;
+    margin: 0;
   }
+
 
   .container-contact-cards {
     grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    background-color: #F1F0EF;
   }
 
   .journey-items-container {
