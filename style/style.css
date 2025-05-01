@@ -361,6 +361,16 @@ nav {
   }
 }
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #4359e8;
+  width: 0%;
+  z-index: 30;
+}
+
 /* Home */
 
 .container-home {
