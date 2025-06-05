@@ -199,6 +199,7 @@
   width: 90vw;
   gap: 4rem;
   position: relative;
+  align-items: flex-start;
 }
 
 .description h2 {
@@ -214,13 +215,18 @@
   font-size: 1.2rem;
 }
 
+.description-text {
+  width: 50%;
+}
+
 .annex {
   margin-top: 1rem;
 }
 
 .visual-container {
   width: 50%;
-  height: fit-content;
+  height: auto;
+  display: block;
   border: solid 3px #F7F3F2;
   box-shadow:
   0px 2.7px 5.3px rgba(0, 0, 0, 0.02),
@@ -237,7 +243,6 @@
 }
 
 .visual-double {
-  height: fit-content;
   border: solid 3px #F7F3F2;
   box-shadow:
   0px 2.7px 5.3px rgba(0, 0, 0, 0.02),
@@ -375,6 +380,10 @@
   .description h2 {
     font-size: 1.8rem;
     line-height: 2.2rem;
+  }
+
+  .description-text {
+    width: 100%;
   }
 
   .visual-container, .visual-container-double {
