@@ -653,13 +653,6 @@ nav {
   border: solid 1px #ededed;
 }
 
-.flagship-project {
-  background-color: #F5F5F4;
-  border: solid 4px #F1F0EF;
-  border-radius: 20px;
-  padding: 1rem;
-}
-
 @media (hover: hover) {
   .project-cover:hover {
     transform: translate(0, -3px);
@@ -1133,13 +1126,6 @@ nav {
     margin-right: 1.5rem;
     height: 4rem;
     width: 4rem;
-  }
-
-  .flagship-project {
-    background-color: inherit;
-    border: none;
-    border-radius: 0px;
-    padding: 0;
   }
 
 }
