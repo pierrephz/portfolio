@@ -1,4 +1,4 @@
-const tagItems = document.querySelectorAll(".tag-item");
+const tagItems = document.querySelectorAll(".tag-item, .side-projects-cards a");
 const tooltip = document.createElement("div");
 tooltip.className = "tooltip";
 document.body.appendChild(tooltip);
