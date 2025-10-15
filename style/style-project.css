@@ -223,6 +223,21 @@
   margin-top: 1rem;
 }
 
+.product-metrics:first-child {
+  margin-top: 1.5rem;
+}
+
+.product-metrics {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.product-metrics img {
+  width: 24px;
+}
+
 .visual-container {
   width: 50%;
   height: auto;
