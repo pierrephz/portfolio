@@ -714,8 +714,8 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  margin: 0 auto 6rem auto;
-  width: 60vw;
+  margin: 6rem auto;
+  width: 75vw;
   gap: 1.5rem;
   border: solid 2px #F1F0EF;
   border-radius: 20px;
@@ -780,6 +780,21 @@ nav {
   background-color: #F1F0EF;
   padding: 5rem 0 1rem 0;
   margin: 1rem;
+}
+
+.about {
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.photo-pierre-philouze {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 25px;
+  transform: rotate(3rem);
+  object-fit: cover;
 }
 
 .contact-text {
@@ -913,7 +928,8 @@ nav {
     width: 40vw;
   }
 
-  .work-grid-container {
+  .work-grid-container,
+  .subcontainer-side-projects {
     width: 60vw;
   }
 
@@ -1104,6 +1120,10 @@ nav {
     margin: 0;
   }
 
+  .about {
+    flex-direction: column;
+    align-items: start;
+  }
 
   .container-contact-cards {
     grid-template-columns: 1fr;
