@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
   cursor: default;
   white-space: normal;
-  background-color: #FAF8F7;
+  background-color: #F7F7F4;
 }
 
 a {
@@ -384,7 +384,7 @@ nav {
 }
 
 .subcontainer-home {
-  width: 70vw;
+  width: 56vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -640,7 +640,7 @@ nav {
 .tags p {
   font-size: 1rem;
   color: #838383;
-  background-color: #ececeb;
+  background-color: #EBEAE6;
   border-radius: 100px;
   padding: .1rem .8rem;
 }
@@ -717,7 +717,7 @@ nav {
   margin: 6rem auto;
   width: 75vw;
   gap: 1.5rem;
-  border: solid 2px #F1F0EF;
+  border: solid 2px #EBEAE6;
   border-radius: 20px;
 }
 
@@ -729,14 +729,14 @@ nav {
 .subcontainer-side-projects a {
   padding: 3rem 0;
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: #F2F1EE;
   text-align: center;
   border-radius: 15px;
   transition: 0.2s;
 }
 
 .subcontainer-side-projects a:hover {
-  background-color: #ececec;
+  background-color: #EBEAE6;
   transform: translateY(-3px);
 }
 
@@ -777,7 +777,7 @@ nav {
   gap: 5rem;
   justify-content: space-between;
   border-radius: 20px;
-  background-color: #F1F0EF;
+  background-color: #F2F1EE;
   padding: 5rem 0 1rem 0;
   margin: 1rem;
 }
@@ -821,13 +821,13 @@ nav {
   width: 100%;
   padding: 1.6rem;
   transition: 0.2s;
-  background-color: #ECEBE9;
+  background-color: #EBEAE6;
   position: relative;
   text-decoration: none;
 }
 
 .contact-card:hover {
-  background-color: #E9E8E7;
+  background-color: #E6E5E1;
   transform: translateY(-3px);
 }
 
