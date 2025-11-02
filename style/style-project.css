@@ -97,10 +97,10 @@
 /* Navbar */
 
 .navlinks-container-project a {
-  transition: color 0.2s;
+  transition: color 0.1s;
   padding: .6rem 1rem;
   border-radius: 10px;
-  transition: 0.2s;
+  transition: 0.1s;
   font-size: 1.2rem;
 }
 
@@ -135,15 +135,15 @@
 .summary {
   width: 100%;
   margin: auto 0;
-  background-color: #F2EEEB;
+  background-color: #F2F1EE;
   padding: 5rem 6rem;
   border-radius: 20px;
-  border: solid 2px #eee7e2;
+  border: solid 2px #ecebe7;
 }
 
 .summary ul {
   padding-left: 2rem;
-  border-left: #e0e0e0 4px solid;
+  border-left: #ecebe7 4px solid;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -242,7 +242,7 @@
   width: 50%;
   height: auto;
   display: block;
-  border: solid 3px #F7F3F2;
+  border: solid 2px #ecebe7;
   box-shadow:
   0px 2.7px 5.3px rgba(0, 0, 0, 0.02),
   0px 8.9px 17.9px rgba(0, 0, 0, 0.03),
@@ -258,7 +258,7 @@
 }
 
 .visual-double {
-  border: solid 3px #F7F3F2;
+  border: solid 2px #ecebe7;
   box-shadow:
   0px 2.7px 5.3px rgba(0, 0, 0, 0.02),
   0px 8.9px 17.9px rgba(0, 0, 0, 0.03),
@@ -299,7 +299,7 @@
 .thank-you {
   display: flex;
   align-items: center;
-  background-color: #F2EEEB;
+  background-color: #F2F1EE;
   padding: 1.2rem 1.5rem;
   border-radius: 10px;
   width: fit-content;
@@ -338,7 +338,7 @@
   text-align: center;
   transition: 0.1s;
   border-radius: 10px;
-  background-color: #F7F3F2;
+  background-color: #F2F1EE;
 }
 
 .previous-project-name, .next-project-name {
@@ -348,7 +348,7 @@
 .nav-previous:hover,
 .nav-home:hover,
 .nav-next:hover {
-  background-color: #F2EEEB;
+  background-color: #EBEAE6;
 }
 
 @media screen and (min-width: 1700px) {

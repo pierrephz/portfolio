@@ -21,18 +21,18 @@ html {
 a {
   color: inherit;
   text-underline-offset: 8px;
-  text-decoration-color: rgba(0, 0, 0, 0.25);
-  transition: all ease-in-out 0.2s;
+  text-decoration-color: #CECCC5;
+  transition: all ease-in-out 0.1s;
   width: fit-content;
 }
 
 a:hover {
-  text-decoration-color: rgba(0, 0, 0, 0.1);
+  text-decoration-color: #E5E4E0;
 }
 
 .arrow-external-link, .arrow-external-link-horizontal, .arrow-external-link-horizontal-left, .arrow-page-link {
   display: inline-block;
-  transition: transform 0.2s, color 0.2s;
+  transition: transform 0.1s, color 0.1s;
 }
 
 a:hover .arrow-external-link-horizontal-left {
@@ -116,7 +116,7 @@ h3 {
 hr {
   border: none;
   height: 1px;
-  background-color: #e2e2e2;
+  background-color: #ecebe7;
   margin: 0 0 6rem 0;
 }
 
@@ -235,7 +235,7 @@ nav {
   display: flex;
   align-items: center;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.1s;
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -245,10 +245,10 @@ nav {
 }
 
 .navlinks-container a {
-  transition: color 0.2s;
+  transition: color 0.1s;
   padding: .6rem 1rem;
   border-radius: 10px;
-  transition: 0.2s;
+  transition: 0.1s;
   font-size: 1.2rem;
 }
 
@@ -296,15 +296,15 @@ nav {
     background: #3b3b3b;
     position: absolute;
     pointer-events: none;
-    transition: opacity .3s .15s ease-out;
+    transition: opacity .1s .1s ease-out;
   }
 
   .hamburger span:hover {
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
   }
 
   .hamburger span:nth-child(1), .hamburger span:nth-child(3) {
-    transition: transform .2s ease-out;
+    transition: transform .1s ease-out;
   }
 
   .hamburger span:nth-child(1) {
@@ -649,7 +649,7 @@ nav {
   border-radius: 10px;
   width: 100%;
   margin-bottom: 1.5rem;
-  transition: .2s ease-in-out;
+  transition: .1s ease-in-out;
   border: solid 1px #ededed;
 }
 
@@ -732,12 +732,11 @@ nav {
   background-color: #F2F1EE;
   text-align: center;
   border-radius: 15px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .subcontainer-side-projects a:hover {
   background-color: #EBEAE6;
-  transform: translateY(-3px);
 }
 
 
@@ -820,7 +819,7 @@ nav {
   align-items: center;
   width: 100%;
   padding: 1.6rem;
-  transition: 0.2s;
+  transition: 0.1s;
   background-color: #EBEAE6;
   position: relative;
   text-decoration: none;
@@ -828,7 +827,7 @@ nav {
 
 .contact-card:hover {
   background-color: #E6E5E1;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .contact-icon {
@@ -875,7 +874,7 @@ nav {
   white-space: nowrap;
   display: none;
   box-shadow: 0px 2.7px 5.3px rgba(0, 0, 0, 0.15), 0px 40px 80px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 }
 
 .tooltip-copy::after {
@@ -895,7 +894,7 @@ nav {
   color: #949494;
   padding: 0.75rem 0;
   text-align: center;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .credits p {
