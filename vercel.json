@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/photography", "destination": "https://photos-portfolio-murex.vercel.app/photography" },
+    { "source": "/photography/:path*", "destination": "https://photos-portfolio-murex.vercel.app/photography/:path*" }
+  ]
+}
