@@ -8,6 +8,7 @@
   --surface-raised: #f2f1ee;
   --surface-sunken: #ebeae6;
   --surface-hover: #e6e5e1;
+  --surface-bar: rgba(247, 247, 244, 0.72);
   --surface-overlay: rgba(250, 248, 247, 0.95);
 
   /* Text */
@@ -269,8 +270,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: .8rem 1.5rem;
-  backdrop-filter: blur(300px);
-  -webkit-backdrop-filter: blur(300px);
+  background: var(--surface-bar);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   z-index: 20;
   top: 0;
 }
@@ -1244,6 +1246,7 @@ nav {
     --surface-raised: #1c1c1a;
     --surface-sunken: #252522;
     --surface-hover: #2e2e2a;
+    --surface-bar: rgba(20, 20, 19, 0.72);
     --surface-overlay: rgba(20, 20, 19, 0.95);
 
     /* Text */
