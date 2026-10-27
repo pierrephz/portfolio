@@ -50,6 +50,16 @@
   white-space: normal;
 }
 
+/* The progress bar reports scroll position, so the native scrollbar stays out of the way */
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body,
 html {
   /* transition: background-color .3s ease, .05s color ease; */
