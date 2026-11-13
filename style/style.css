@@ -795,6 +795,17 @@ nav {
   background-color: var(--surface-sunken);
 }
 
+/* 2 × 2 grid; phones (≤ 800px) switch to a plain list further down */
+@media screen and (min-width: 801px) {
+  .side-projects-cards {
+    flex-wrap: wrap;
+  }
+
+  .subcontainer-side-projects .side-projects-cards a {
+    width: calc(50% - .75rem);
+  }
+}
+
 
 /* Journey */
 
@@ -1157,7 +1168,6 @@ nav {
   .side-projects-cards a:last-child {
     padding-bottom: .5rem;
   }
-
   .side-projects-cards a:hover {
     background-color: inherit;
     transform: none;
